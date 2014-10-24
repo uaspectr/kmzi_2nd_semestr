@@ -1,5 +1,5 @@
-#include "stdafx.h"
 #include "md5.h"
+#include <string.h>
  
 using namespace std;
  
@@ -337,6 +337,10 @@ string MD5::bytesToHexString(const byte* input, size_t length) {
         int b = t % 16;
         str.append(1, HEX[a]);
         str.append(1, HEX[b]);
+        if(i == 3 || i == 7 || i == 11)
+        {
+        str.append(1,' ');
+        }
     }
     return str;
 }

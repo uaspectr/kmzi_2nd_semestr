@@ -32,7 +32,7 @@ bool Gost_r::read_file(char *fileName)
 
     return true;                                                                            
 }
-//Вывод хеща на экран
+//Вывод хэша на экран
 bool Gost_r::Show_hash()
 {
                                                                          

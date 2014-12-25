@@ -1,0 +1,6 @@
+all:
+	swig -c++ -ruby Big_integer.i
+	ruby extconf.rb
+	make
+	make install
+	rm *.o *.cxx
